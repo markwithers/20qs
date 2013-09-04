@@ -5,7 +5,7 @@ questions.game = function() {
 	var role = '';
 	var name = '';
 	
-	var socket = io.connect('http://localhost:3232');
+	var socket = io.connect('http://20qs.azurewebsites.net');
 	
 	var setupSocketEvents = function(){
 		socket.on('start', function (data) {
