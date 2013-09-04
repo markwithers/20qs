@@ -12,7 +12,7 @@ app.configure(function() {
     app.use(app.router)
 })
 
-var io = require('socket.io').listen(3232);
+var io = require('socket.io').listen(3333);
 
 var id = 1;
 var games = [];
