@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>20 questions</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+	<script src="http://localhost:3232/socket.io/socket.io.js"></script>
+	<script src="/script/lib/jquery-1.9.1.min.js"></script>
+	<script src="/script/game.js"></script>
+	<script>
+		$(document).ready(function() {
+			questions.game.start();
+		});
+	</script>
+
+<header>
+	<div class="header-wrapper">
+		<h1>20 QUESTIONS</h1>
+		<section id="info">
+			<h3 id="logged-in"></h3>
+			<div class="minor-info">
+				Game # <span id="game-id"></span> 
+				Players <span id="players"></span>
+			</div>
+			<div class="question-number"></div>
+		</section>
+	</div>
+</header>
+		
+	<div id="container">
+
+		<div id="main">
+			<section id="login">
+				<label>Name</label>
+				<input type="text" id="name" />
+				<button id="login-button">Login</button>
+			</section>
+
+			<section id="lobby">
+				<section id="create-game-container">
+					Start new game as 
+					<button id="create-game-guesser">Guesser</button> or 
+					<button id="create-game-answerer">Answerer</button>
+				</section>
+				<h4>Active Game List</h4>
+				<ul id="game-list">
+				</ul>
+			</section>
+
+			<section id="game">
+				<div id='status'></div>
+				<section id="answer-container">
+					Enter the answer to the guessing game. <br /> 
+					Please choose a famous person or character 
+					<input type="text" id="answer" />
+					<button id="answer-button">Start</button>
+				</section>
+				<ol id="question-list">
+				</ol>
+				<section id="question-container">
+					Ask a Yes or a No question about the person your opponent is thinking of. Try to narrow it down!
+					<input type="text" id="question" />
+					<button id="ask">Ask</button>
+				</section>
+			</section>
+		</div>
+		<aside>
+			<section id="chat">
+				<h3>Chat</h3>
+				<input type="text" id="chat-message" />
+				<button id="chat-button">Chat</button>
+				<ul>
+				</ul>
+			</section>
+		</aside>
+	</div>
+</body>
+</html>

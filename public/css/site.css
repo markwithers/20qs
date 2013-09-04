@@ -1,0 +1,164 @@
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-weight: 300;
+	overflow-x: hidden;
+	margin:0px;
+}
+
+h1, h2, h3, h4 {
+	margin: 0.3em 0;
+}
+
+header {
+	padding: 20px 0 10px 0;
+	background-color: #ccc;
+}
+
+h3 {
+	color:#b14943;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.4); 
+}
+
+.header-wrapper {
+	width: 98%;
+	max-width: 920px;
+	margin: auto;
+}
+
+.header-wrapper h1 {
+	display: inline-block;
+}
+
+#container { 
+	width: 98%;
+	max-width: 920px;
+	margin: auto;
+	padding: 10px 1%;
+}
+
+#main {
+	min-height: 80%;
+	width: 60%;
+	margin-right: 3%;
+	float: left;
+	font-size: 120%;
+}
+
+aside {
+	width: 32%;
+	float: right;
+	min-height: 80%;
+	min-width: 120px;
+}
+
+#lobby, #game, #question-container, #answer-container { 
+	display: none; 
+}
+
+#question-container {
+	margin: 10px 0;
+}
+
+#create-game-container {
+	margin-bottom: 20px;	
+}
+
+#info {
+	float:right;
+}
+
+.minor-info {
+	display: none;
+	font-size: 80%; font-style: italic;
+	color: #EEE;
+}
+
+#chat { 
+	display: none; 
+	padding: 4%; 
+	background-color: #76C3BD; 
+	color: #eee; 	
+	border-radius: 15px; 
+}
+
+#chat ul { 
+	list-style-type: none; 
+	padding: 0; 
+	min-height: 60% 
+}
+
+#chat ul li span { 
+	display:inline-block; 
+	padding-right: 5px; 
+	color: #ccc; 
+}
+
+#chat h3 {
+	color:#FFF;
+	text-shadow: none; 
+}
+
+#game-list .creator {
+	font-weight: bold;
+	color: #000;
+	font-size: 110%;
+}
+
+#game-list li {
+	color: #333;
+	font-size: 80%;
+}
+
+#question-list{ 
+	margin: 10px 0px 50px 0px;
+	padding: 0;
+}
+#question-list li {
+	display: block;
+	background-color: #ddd;
+	border-radius: 5px;
+	padding: 4px 8px;
+	margin: 2px;
+}
+#question-list li.answer-yes{
+	background-color: #B0EDAD;
+}
+#question-list li.answer-no{
+	background-color: #F4CDCE;
+}
+
+button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-weight:bold;
+	padding:2px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+input[type=text] {
+	display:block;
+}
