@@ -2,7 +2,7 @@ var _ = require('underscore');
 var express = require('express');
 var app = express();
 
-var server = app.listen(process.env.PORT || 3333);
+var server = app.listen(80;
 
 app.configure(function() {
     app.use(express.bodyParser())
